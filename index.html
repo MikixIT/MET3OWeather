@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MET3OWeather</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
-    <title>MET3O</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="app-container">
+        <header>
+            <input type="text" autocomplete="off" placeholder="Type city here..." class="search-box">
+            <main>
+                <section class="location">
+                    <div class="city">Palermo, Italy</div>
+                    <div class="date">Monday 28 June 2021</div>
+                </section>
 
-        <div class="location">
-            <h1 class="location-timezone">Palermo</h1>
-            <p>Icon </p>
-        </div>
-        
-        <div class="temp">
-            <div class="degree-container">
-                <h2 class="temp-degree">26</h2>
-                <span>°</span>
-            </div>
-
-            <div class="temp-description">Really HOT Temperature</div>
-        </div>
-
-
+                <div class="current">
+                    <div class="temp">30<span>°C</span></div>
+                    <div class="weather">Hot Sunny</div>
+                    <div class="hi-low-temp">34°C / 24°C</div>
+                </div>
+            </main>
+        </header>
     </div>
-
-
-
+    
     <script src="app.js"></script>
 </body>
 </html>

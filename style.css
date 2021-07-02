@@ -2,37 +2,103 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Merriweather', serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
-.container{
-    height: 100vh;
+body{
+    background-image: url(/bg.jpeg);
+    background-size: cover;
+    background-position: top center;
+
+
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1));
+
+}
+
+header{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #7F7FD5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5); 
-     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5); 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
+    padding: 40px 15px 15px;
 }
 
-.location, 
-.temp{
+header input{
+    width: 100%;
+    max-width: 280px;
+    padding: 15px;
+    margin: 20px;
+    outline: none;
+    border: none;
+    box-shadow:  0 4px 8px 0 rgb(0, 0, 0, 0.7 );
+    background-color: rgba(255, 255, 255, 0.1) ;
+    color: white;
+    border-radius: 16px 16px 16px 16px;
+    border-bottom: 1px solid rgb(31, 12, 122, 0.9);
+    font-size: 18px;
+    font-weight: 200;
+    transition: 1s ease-out; 
+
+}
+
+header ::placeholder{
+    color: rgba(255, 255, 255, 0.685);
+}
+
+header input:focus{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+main{
     display: flex;
-    height: 30vh;
-    width: 50%;
-    justify-content: space-around;
+    flex: 1 1 100%;
+    flex-direction: column;
+    padding: 25px 25px 50px;
+    text-align: center;
     align-items: center;
 }
 
-.temp{
-    flex-direction: column;
+.location .city{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 500;
 }
 
-.degree-container{
-    display: flex;
-    cursor: pointer;
+.location .date{
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 5px;
+} 
+
+.current .temp{
+    color: white;
+    font-size: 80px;
+    margin: 5px;
+    font-weight:800;
+    text-shadow:4px 8px rgb(0,0,0, 0.3);
+}
+
+.current .temp span{
+    font-weight: 200;
+    font-size: 70px;
+}
+
+.current .weather{
+    color: white;
+    font-weight: 200;
+    font-size: 40px;
+    
+}
+
+.current .hi-low-temp{
+    font-size: 25px;
+    color: white;
 }

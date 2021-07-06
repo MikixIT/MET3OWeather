@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(/bg.jpeg);
+    background-image: url(img/bg.jpg);
     background-size: cover;
     background-position: top center;
 
@@ -17,7 +17,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgb(0, 0, 0, 0.1));
 
 }
 
@@ -95,7 +95,6 @@ main{
     color: white;
     font-weight: 200;
     font-size: 40px;
-    
 }
 
 .current .hi-low-temp{

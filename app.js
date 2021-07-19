@@ -12,7 +12,6 @@ searchButton.addEventListener('click', setQuery);
 function setQuery(evt) {
     if (evt.keyCode == 13 || searchButton.onclick) {
      getResults(searchbox.value);
-     console.log(searchbox.value);
     }
 }
 

@@ -64,6 +64,10 @@ main{
     align-items: center;
 }
 
+.black3{
+    color: rgb(75, 75, 75);
+}
+
 .search-button{
     padding: 5px;
     justify-content: center;

@@ -55,10 +55,6 @@ header input:focus{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* header button .searchButton{
-
-} */
-
 main{
     display: flex;
     flex: 1 1 100%;

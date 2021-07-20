@@ -64,6 +64,83 @@ main{
     align-items: center;
 }
 
+.search-button{
+    padding: 5px;
+    justify-content: center;
+    box-shadow:  0 4px 8px 0 rgb(0, 0, 0, 0.7 );
+    border-radius: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.253);
+    border-bottom: 1px solid rgba(63, 29, 233, 0.9);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.search-button{
+    min-width: 100px;
+    min-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: white;
+    background: #698885;
+    background: linear-gradient(90deg, rgb(52, 116, 153) 0%, rgb(13,94,189) 100%);
+    border: none;
+    border-radius: 100px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 20px;
+    margin: 60px ;
+    }
+  
+
+  
+  .search-button:hover, .search-button:focus {
+    color: #ffffff85;
+    transform: translateY(-6px);
+  }
+  
+  .search-button:hover::before, .search-button:focus::before {
+    opacity: 1;
+  }
+  
+  .search-button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.3s infinite;
+  }
+  
+  .search-button:hover::after, .search-button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+  }
+
+
+
 .location .city{
     color: white;
     font-size: 32px;
@@ -73,14 +150,14 @@ main{
 
 .location .date{
     color: white;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 200;
     margin-bottom: 5px;
 } 
 
 .current .temp{
     color: white;
-    font-size: 80px;
+    font-size: 150px;
     margin: 5px;
     font-weight:800;
     text-shadow:4px 8px rgb(0,0,0, 0.3);
@@ -94,7 +171,7 @@ main{
 .current .weather{
     color: white;
     font-weight: 200;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .current .hi-low-temp{

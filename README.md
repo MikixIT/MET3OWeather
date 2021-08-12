@@ -7,4 +7,4 @@ A web application with all the information about the weather!
 ![](CHEESE.gif)
 
 
-# DEVELOPED BY MIKIXIT
+# DEVELOPED BY MikixIT

@@ -3,3 +3,5 @@ A web application with all the information about the weather!
 
 # DESKTOP MODE
 ![](CHEESE.gif)
+
+# DEVELOPED BY MIKIXIT

@@ -10,3 +10,4 @@ A web application with all the information about the weather!
 -> https://mikixit.github.io/MET3OWeather/
 
 # DEVELOPED BY MikixIT
+JS and API from open.weather.map

@@ -200,7 +200,7 @@ footer {
   box-sizing: border-box;
   opacity: 0.7;
   color: rgb(23, 22, 22);
-  margin-top: auto;
+  bottom: 0px;
 }
 
 footer a {

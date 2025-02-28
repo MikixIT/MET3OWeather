@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     <title>MET3OWeather</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/icon.ico">
-    <link rel="apple-touch-icon" href="img/icon.ico"/>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/icon.ico" />
+    <link rel="apple-touch-icon" href="img/icon.ico" />
+  </head>
+  <body>
     <div class="app-container">
-        <header>
+      <header>
+        <input
+          type="text"
+          autocomplete="off"
+          placeholder="Type your city..."
+          class="search-box"
+        />
+        <button class="search-button" onclick="setQuery">S3ARCH</button>
+        <main>
+          <section class="location">
+            <div class="city"></div>
+            <div class="date"></div>
+          </section>
 
-            <input type="text" autocomplete="off" 
-            placeholder="Type city here..." class="search-box"/>
-            <button class="search-button" onclick="setQuery">S3ARCH</button> 
-            <main>
-                <section class="location">
-                    <div class="city">Welcome to MET<span class="black3">3</span>OWeather</div>
-                    <div class="date"></div>
-                </section>
-
-                <div class="current">
-                    <div class="temp">-<span>°C</span></div>
-                    <div class="weather"> Weather here!</div>
-                    <div class="hi-low-temp"></div>
-                </div>
-            </main>
-        </header>
-        <p class="credits">Developed by MikixIT</p>
+          <div class="current">
+            <div class="temp"><span></span></div>
+            <div class="weather"></div>
+            <div class="hi-low-temp"></div>
+          </div>
+        </main>
+      </header>
+      <footer>
+        Dev with 🌞 by
+        <a href="https://www.linkedin.com/in/michaeltorresdev/">Michael</a>
+      </footer>
     </div>
-    
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

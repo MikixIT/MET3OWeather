@@ -16,7 +16,7 @@ Looks great on any device. Check the weather wherever you are!
 
 🔗 Live Demo
 
-👉 [TRY IT HERE](mikixit.github.io/MET3OWeather/)
+👉 [TRY IT HERE](https://mikixit.github.io/MET3OWeather/) 
 
 # DESKTOP MODE
 ![](CHEESE.gif)
